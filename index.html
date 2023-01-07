@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edufy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <?php
+  echo "hi";
+  ?>
+<!-- <?php
+    $name = _POST['name'];  
+    $phone = _POST['phone'];  
+    $email = _POST['email'];  
+    $text = _POST['text'];  
+   
+   //database connection
+   $conn = new mysqli('localhost', 'root', '','contact_us');
+   if($conn -> connect_error)
+   {
+       die('Connection failed  : '. $conn -> connect_error);
+   }
+   else
+   {
+       $stmt = $conn->prepare("insert into contact_us(name, phone, email, text) values(?, ?, ?, ?)");
+       $stmt->bind_param("sssiss", $name, $phone, $email, $text);
+       $stmt->execute();
+       echo"Registration Sucessfull";
+       $stmt->close();
+       $conn->close();
+   }
+  
+  ?> -->
+    <nav  class="navbar background h-nav">
+        <ul class="nav-list v-class">
+            <div class="logo">
+                <img src="letter-e.png" alt="logo">
+            </div>
+            <li> <a href="#Home">Home</a></li>
+            <li> <a href="#About">About</a></li>
+            <li> <a href="#Services">Services</a></li>
+            <li> <a href="#Contact">ContactUs</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Login/SignUp
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="login.php">Login</a>
+                  <a href="signup.php">Sign-Up</a>
+                </div>
+              </div>
+        </ul>
+        <div class="rightNav v-class">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+   </nav>
+
+   <section id="Home" class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The Future Of Education Is Here</p>
+                <p class="text-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, ad quasi esse repellendus recusandae earum commodi debitis hic sed? Aspernatur!</p>
+                <div class="buttons btn-glow">
+                    <button class="btn glow "> <a href="getNotes.php">Get Your Notes</a> </button>
+                    <button class="btn glow "> <a href="#">Upload Your Notes</a> </button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img id="img-1" src="letter-e.png" alt="logo">
+            </div>
+        </div>
+   </section>
+
+   <section  id="About" class="section">
+        <div class="paras">
+
+            <p class="text-big">About Us</p>
+            <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quibusdam dolores voluptatem tempora aliquid, minima totam iste consequatur soluta obcaecati necessitatibus laborum velit perspiciatis voluptates voluptate ratione. Dolorum hic numquam delectus deleniti repellat, accusamus doloremque quo quia consectetur sapiente eaque laudantium ex inventore possimus quam doloribus explicabo, ipsa nostrum. Sed excepturi qui repudiandae itaque vero, illo maxime culpa facilis expedita inventore placeat. Cum, id reprehenderit. Illum, iusto? Consectetur ab quod vero veniam atque! Provident fugit magnam asperiores, nulla tempora deserunt exercitationem. Accusantium, dolorem temporibus cum quasi laboriosam quos, deserunt quibusdam at veniam ratione possimus nam? Eligendi quibusdam ex, repellendus ipsa expedita iusto recusandae labore! Autem impedit distinctio quas, ipsa quisquam quos reprehenderit ullam dolores a aliquid pariatur ipsum neque eius, facere adipisci dignissimos beatae odit vitae? Rerum, error explicabo corrupti voluptates accusamus optio voluptatem voluptas quasi, libero debitis recusandae ab repellat veniam incidunt, cupiditate eos? Itaque eaque voluptates iure dolorum eos, numquam placeat illo vero deserunt. Exercitationem expedita reiciendis voluptatem architec</p>
+        </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/256x256/?books" alt="logo" class="imgFluid">
+            </div>
+   </section>
+   
+   <section  id="Services" class="section section-left">
+    <div class="paras">
+
+        <p class="text-big">Services</p>
+        <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quibusdam dolores voluptatem tempora aliquid, minima totam iste consequatur soluta obcaecati necessitatibus laborum velit perspiciatis voluptates voluptate ratione. Dolorum hic numquam delectus deleniti repellat, accusamus doloremque quo quia consectetur sapiente eaque laudantium ex inventore possimus quam doloribus explicabo, ipsa nostrum. Sed excepturi qui repudiandae itaque vero, illo maxime culpa facilis expedita inventore placeat. Cum, id reprehenderit. Illum, iusto? Consectetur ab quod vero veniam atque! Provident fugit magnam asperiores, nulla tempora deserunt exercitationem. Accusantium, dolorem temporibus cum quasi laboriosam quos, deserunt quibusdam at veniam ratione possimus nam? Eligendi quibusdam ex, repellendus ipsa expedita iusto recusandae labore! Autem impedit distinctio quas, ipsa quisquam quos reprehenderit ullam dolores a aliquid pariatur ipsum neque eius, facere adipisci dignissimos beatae odit vitae? Rerum, error explicabo corrupti voluptates accusamus optio voluptatem voluptas quasi, libero debitis recusandae ab repellat     veniam incidunt, cupiditate eos? Itaque eaque voluptates iure dolorum eos, numquam placeat illo vero deserunt. Exercitationem expedita reiciendis voluptatem architec</p>
+    </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/256x256/?studying" alt="logo" class="imgFluid">
+        </div>
+</section>
+
+<!-- <section class="section">
+    <div class="paras">
+
+        <p class="text-big">the end of your search  is here</p>
+        <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quibusdam dolores voluptatem tempora aliquid, minima totam iste consequatur soluta obcaecati necessitatibus laborum velit perspiciatis voluptates voluptate ratione. Dolorum hic numquam delectus deleniti repellat, accusamus doloremque quo quia consectetur sapiente eaque laudantium ex inventore possimus quam doloribus explicabo, ipsa nostrum. Sed excepturi qui repudiandae itaque vero, illo maxime culpa facilis expedita inventore placeat. Cum, id reprehenderit. Illum, iusto? Consectetur ab quod vero veniam atque! Provident fugit magnam asperiores, nulla tempora deserunt exercitationem. Accusantium, dolorem temporibus cum quasi laboriosam quos, deserunt quibusdam at veniam ratione possimus nam? Eligendi quibusdam ex, repellendus ipsa expedita iusto recusandae labore! Autem impedit distinctio quas, ipsa quisquam quos reprehenderit ullam dolores a aliquid pariatur ipsum neque eius, facere adipisci dignissimos beatae odit vitae? Rerum, error explicabo corrupti voluptates accusamus optio voluptatem voluptas quasi, libero debitis recusandae ab repellat veniam incidunt, cupiditate eos? Itaque eaque voluptates iure dolorum eos, numquam placeat illo vero deserunt. Exercitationem expedita reiciendis voluptatem architec</p>
+    </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/256x256/?coding" alt="logo" class="imgFluid">
+        </div>
+</section> -->
+
+<section id="Contact" class="contact">
+    <h2 class="text-center">Contact US</h2>
+    <div class="form">
+        <form action="index.php" method="post">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your E-mail">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Elaborate Your Concern"></textarea>
+            <button class="btn-dark btn btn-sm"> Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer class="background">
+    <p class="text-footer" >
+        copyright &copy; 2023 www.edufy.com - All rights reserverd.
+    </p>
+</footer>
+<script src="js/resp.js"></script>
+</body>
+</html>
